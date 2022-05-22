@@ -40,6 +40,9 @@ public class AddressBook {
 	}
 	
 	public String toString(String name) {
+		if(nameBook.get(name) == null) {
+			return "Name not found";
+		}
 		String str = name + ": ";
 		Set<Integer> set = nameBook.get(name);
 		List<Integer> list = new ArrayList(set);
@@ -55,6 +58,9 @@ public class AddressBook {
 	}
 	
 	public String toString(int number) {
+		if(numberBook.get(number) == null) {
+			return "Phone number not found";
+		}
 		String str = number + ": ";
 		Set<String> set = numberBook.get(number);
 		List<String> list = new ArrayList(set);
