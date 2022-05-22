@@ -1,2 +1,2 @@
 # PhoneBookCompany
-Worked on problem 1 on design exercises #3
+Worked on design exercise #3 problem 1
